@@ -1,0 +1,467 @@
+<html>
+    <head>
+        <title>✧✨ 𝓟𝓪𝓷𝓭𝓪 ʕ ●ㅅ● ʔ ✨✧</title>
+        <style>
+            body{
+                background-color: darkolivegreen;
+                background-image:url(https://thumbs.dreamstime.com/b/bamboo-jungle-mountains-background-illustration-60196606.jpg);
+                background-size: cover;
+                background-blend-mode:screen;
+            }
+        </style>
+    </head>
+    <body onload="panda();">
+        <canvas id="myCanvas" height="1000" width="1000"></canvas>
+        <script type="text/javascript">
+            function panda(){
+                var canvas=document.getElementById("myCanvas");
+                var ctx=canvas.getContext("2d");
+                //ears
+                    //outer left
+                    ctx.beginPath();
+                    ctx.filter="blur(1px)";
+                    ctx.fillStyle="rgb(81, 81, 81)";
+                    ctx.arc(500,170,80,0*Math.PI,2*Math.PI, false);
+                    ctx.fill();
+                    ctx.closePath();
+                    //outer right
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(81, 81, 81)";
+                    ctx.arc(800,170,80,0*Math.PI,2*Math.PI, false);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+
+                    //inner left
+                    ctx.beginPath();
+                    ctx.filter = "blur(4px)"
+                    ctx.fillStyle="rgb(252, 160, 146)";
+                    ctx.arc(500,170,45,0*Math.PI,2*Math.PI, false);
+                    ctx.fill();
+                    ctx.closePath();
+                    //inner right
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(252, 160, 146)";
+                    ctx.arc(800,170,45,0*Math.PI,2*Math.PI, false);
+                    ctx.fill();
+                    ctx.filter = "none";
+                    ctx.closePath();
+                
+                //arms
+                    //left 
+                    ctx.beginPath();
+                    ctx.filter="blur(1px)";
+                    ctx.fillStyle="rgb(81, 81, 81)";
+                    ctx.ellipse(500,515,97,195,Math.PI/3.5,0,5* Math.PI);
+                    ctx.fill();
+                    ctx.closePath();
+                    //right
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(81, 81, 81)";
+                    ctx.ellipse(800,515,195,97,Math.PI/4.5,0,5* Math.PI);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+                
+                    //shading
+                    ctx.beginPath();
+                    ctx.filter="blur(17px)";
+                    ctx.fillStyle="rgb(41, 41, 41)";
+                    ctx.ellipse(500,530,60,170,Math.PI/3.5,0,5* Math.PI);
+                    ctx.fill();
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(41, 41, 41)";
+                    ctx.ellipse(800,530,170,60,Math.PI/4.5,0,5* Math.PI);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+                
+                    //highlights
+                    ctx.beginPath();
+                    ctx.filter="blur(25px)";
+                    ctx.fillStyle="rgb(120, 120, 120)";
+                    ctx.ellipse(420,530,20,100,Math.PI/3.5,0,5* Math.PI);
+                    ctx.fill();
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(120, 120, 120)";
+                    ctx.ellipse(880,530,100,20,Math.PI/4.5,0,5* Math.PI);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+                
+                //body
+                    //white shading
+                    ctx.beginPath();
+                    ctx.filter="blur(1px)";
+                    ctx.fillStyle="rgb(184, 191, 177)";
+                    ctx.arc(650,560,218,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+
+                    //white highlight
+                    ctx.beginPath();
+                    ctx.filter="blur(5px)";
+                    ctx.fillStyle="rgb(216, 169, 158)";
+                    ctx.ellipse(630,560,140,155,Math.PI/2,0,5* Math.PI);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.filter="blur(25px)";
+                    ctx.fillStyle="rgb(255, 255, 255)";
+                    ctx.ellipse(630,560,140,165,Math.PI/2,0,5* Math.PI);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+
+                    //gray
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(89, 89, 89)";
+                    ctx.arc(650,560,220,0*Math.PI,1*Math.PI,true);
+                    ctx.fill();
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.filter="blur(3px)";
+                    ctx.fillStyle="rgb(89,89,89)";
+                    ctx.ellipse(650,560,60,220,Math.PI/2,0,5* Math.PI);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+
+                    //gray shade
+                    ctx.beginPath();
+                    ctx.filter="blur(16px)";
+                    ctx.fillStyle="rgb(41, 41, 41)";
+                    ctx.arc(650,400,150,0*Math.PI,1*Math.PI,false);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+
+                    //gray highlight
+                    ctx.beginPath();
+                    ctx.filter="blur(75px)";
+                    ctx.fillStyle="rgb(255, 255, 255)";
+                    ctx.ellipse(650,620,50,105,Math.PI/2,0,5* Math.PI);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+                
+                //head
+                    //shade
+                    ctx.beginPath();
+                    ctx.filter="blur(1px)";
+                    ctx.fillStyle="rgb(225, 232, 218)";
+                    ctx.arc(650,300,200,0*Math.PI,2*Math.PI, false);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+
+                    //highlight
+                    ctx.beginPath();
+                    ctx.filter="blur(8px)";
+                    ctx.fillStyle="rgb(249, 219, 212)";
+                    ctx.ellipse(646,280,160,195,Math.PI/2,0,5* Math.PI);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.filter="blur(20px)";
+                    ctx.fillStyle="rgb(255, 255, 255)";
+                    ctx.ellipse(646,280,150,185,Math.PI/2,0,5* Math.PI);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+
+                //blush
+                    //left
+                    ctx.beginPath();
+                    ctx.filter="blur(20px)";
+                    ctx.fillStyle="rgb(255, 154, 135)";
+                    ctx.arc(520,365,40,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.closePath();
+                    //right
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(255, 154, 135)";
+                    ctx.arc(780,365,40,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+                
+                //eyes
+                    //patch left
+                    ctx.beginPath();
+                    ctx.filter="blur(3px)";
+                    ctx.fillStyle="rgb(71, 71, 71)";
+                    ctx.ellipse(550,300,60,70,Math.PI/3,0,5* Math.PI);
+                    ctx.fill();
+                    ctx.closePath();
+                    //patch right
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(71, 71, 71)";
+                    ctx.ellipse(750,300,70,60,Math.PI/6,0,5* Math.PI);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+
+                    //left
+                    ctx.beginPath();
+                    ctx.filter="blur(1px)";
+                    ctx.fillStyle="black";
+                    ctx.arc(580,295,20,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.closePath();
+                    //right
+                    ctx.beginPath();
+                    ctx.fillStyle="black";
+                    ctx.arc(720,295,20,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+                    //brown left
+                    ctx.beginPath();
+                    ctx.filter="blur(4px)";
+                    ctx.fillStyle="rgb(112, 39, 5)";
+                    ctx.ellipse(584,300,9,14,Math.PI/3,0,5* Math.PI)
+                    ctx.fill();
+                    ctx.closePath();
+                    //brown right
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(112, 39, 5)";
+                    ctx.ellipse(724,300,9,14,Math.PI/3,0,5* Math.PI)
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+                    //yellow left
+                    ctx.beginPath();
+                    ctx.filter="blur(3px)";
+                    ctx.fillStyle="rgb(226, 139, 38)";
+                    ctx.ellipse(584,305,3,8,Math.PI/3,0,5* Math.PI)
+                    ctx.fill();
+                    ctx.closePath();
+                    //yellow right
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(226, 139, 38)";
+                    ctx.ellipse(724,305,3,8,Math.PI/3,0,5* Math.PI)
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+
+                    //pupil left
+                    ctx.beginPath();
+                    ctx.filter="blur(1px)";
+                    ctx.fillStyle="black";
+                    ctx.arc(580,295,8,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.closePath();
+                    //pupil right
+                    ctx.beginPath();
+                    ctx.fillStyle="black";
+                    ctx.arc(720,295,8,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+
+                    //large shine left
+                    ctx.beginPath();
+                    ctx.filter="blur(1px)";
+                    ctx.fillStyle="white";
+                    ctx.arc(572,287,3.5,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.closePath();
+                    //large shine right
+                    ctx.beginPath();
+                    ctx.fillStyle="white";
+                    ctx.arc(712,287,3.5,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+                    //shine left
+                    ctx.beginPath();
+                    ctx.filter="blur(1px)";
+                    ctx.fillStyle="white";
+                    ctx.arc(578,292,1.7,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.closePath();
+                    //eye shine right
+                    ctx.beginPath();
+                    ctx.fillStyle="white";
+                    ctx.arc(718,292,1.7,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+                
+                //mouth
+                    ctx.beginPath();
+                    ctx.filter="blur(1px)";
+                    ctx.fillStyle="rgb(252, 160, 146)";
+                    ctx.arc(650,375,23,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.filter="blur(4px)";
+                    ctx.fillStyle="rgb(255, 190, 181)";
+                    ctx.arc(650,390,15,0*Math.PI,1*Math.PI,true);
+                    ctx.fill();
+                    ctx.closePath();
+
+                    //curve
+                    ctx.beginPath();
+                    ctx.filter="blur(1px)"
+                    ctx.fillStyle="rgb(120,120,120)";
+                    ctx.ellipse(635,364,14,19,Math.PI/3,0,5* Math.PI)
+                    ctx.fill();
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(120,120,120)";
+                    ctx.ellipse(665,364,19,14,Math.PI/6,0,5* Math.PI)
+                    ctx.fill();
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(255, 255, 255)";
+                    ctx.ellipse(635,360,14,19,Math.PI/3,0,5* Math.PI)
+                    ctx.fill();
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(255, 255, 255)";
+                    ctx.ellipse(665,360,19,14,Math.PI/6,0,5* Math.PI)
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+
+                //toes
+                    //left
+                    ctx.beginPath();
+                    ctx.filter="blur(1px)";
+                    ctx.fillStyle="rgb(81, 81, 81)";
+                    ctx.ellipse(500,730,100,80,Math.PI/5,0,5* Math.PI);
+                    ctx.fill();
+                    ctx.closePath();
+                    //right
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(81, 81, 81)";
+                    ctx.ellipse(800,730,80,100,Math.PI/3.5,0,5* Math.PI);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();    
+                    //left highlights
+                    ctx.beginPath();
+                    ctx.filter="blur(15px)";
+                    ctx.fillStyle="rgb(180,180,180)";
+                    ctx.ellipse(470,670,15,40,Math.PI/2.5,0,5* Math.PI);
+                    ctx.fill();
+                    ctx.closePath();
+                    //right highlights
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(180,180,180)";
+                    ctx.ellipse(825,670,40,15,Math.PI/10,0,5* Math.PI);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+                
+                //paws
+                    //left
+                    ctx.beginPath();
+                    ctx.filter="blur(2px)";
+                    ctx.fillStyle="rgb(252, 160, 146)";
+                    ctx.arc(520,750,40,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(252, 160, 146)";
+                    ctx.arc(500,685,15,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(252, 160, 146)";
+                    ctx.arc(460,700,15,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(252, 160, 146)";
+                    ctx.arc(454,742,15,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.closePath();
+
+                    //right
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(252, 160, 146)";
+                    ctx.arc(780,750,40,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(252, 160, 146)";
+                    ctx.arc(800,685,15,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(252, 160, 146)";
+                    ctx.arc(840,700,15,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(252, 160, 146)";
+                    ctx.arc(845,742,15,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+
+                    //left highlights
+                    ctx.beginPath();
+                    ctx.filter="blur(10px)";
+                    ctx.fillStyle="rgb(255, 255, 255)";
+                    ctx.arc(520,735,20,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.filter="blur(4px)"
+                    ctx.fillStyle="rgb(255, 255, 255)";
+                    ctx.arc(500,680,5,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(255, 255, 255)";
+                    ctx.arc(460,695,5,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(255, 255, 255)";
+                    ctx.arc(454,737,5,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+
+                    //right highlights
+                    ctx.beginPath();
+                    ctx.filter="blur(10px)";
+                    ctx.fillStyle="rgb(255, 255, 255)";
+                    ctx.arc(780,735,20,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.filter="blur(4px)";
+                    ctx.fillStyle="rgb(255, 255, 255)";
+                    ctx.arc(800,680,5,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(255, 255, 255)";
+                    ctx.arc(840,695,5,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.closePath();
+                    ctx.beginPath();
+                    ctx.fillStyle="rgb(255, 255, 255)";
+                    ctx.arc(845,737,5,0*Math.PI,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.filter="none";
+                    ctx.closePath();
+            }
+        </script>
+    </body>
+</html>
