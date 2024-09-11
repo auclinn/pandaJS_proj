@@ -1,1 +1,0 @@
-### JS Activity in HS ###
